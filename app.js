@@ -21,10 +21,7 @@ async function consultarCEP(cep) {
 
  }
 
-    enderecoUsuario.rua.innerText = dadosDoCEP.rua
-    enderecoUsuario.bairro.innerText = dadosDoCEP.bairro
-    enderecoUsuario.cidade.innerText = dadosDoCEP.cidade
-    enderecoUsuario.estado.innerText = dadosDoCEP.estado
+ inserirDados(dadosDoCEP)
 
 console.log(dadosDoCEP)
 
@@ -32,5 +29,13 @@ console.log(dadosDoCEP)
 }
 
 consultarCEP(enderecoUsuario.cep)
+
+function inserirDados(dadosDoCEP){
+    
+    enderecoUsuario.rua.innerText = dadosDoCEP.rua
+    enderecoUsuario.bairro.innerText = dadosDoCEP.bairro
+    enderecoUsuario.cidade.innerText = dadosDoCEP.cidade
+    enderecoUsuario.estado.innerText = dadosDoCEP.estado
+}
 
 
